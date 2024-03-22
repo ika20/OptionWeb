@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap')
 
 .noto-sans mono-<uniquifier> {
   font-family: "Noto Sans Mono", monospace;
@@ -26,12 +26,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
 nav h1 {
+    display: block;
+    position: absolute;
     font-size: 30px;
-    font-family: "Crimson Text", serif;
+    font-family: "Poppins", sans-serif;
+    right: 45%;
+    margin: 20px 0 0;
 }
 
 nav .menu {
@@ -46,7 +49,8 @@ nav .menu a {
 }
 
 header {
-    background-color: #0F32A9;
+    /*background-color: #0F32A9;*/
+    background-color: #2b406b;
     color: #fff;
     padding: 5px;
     top: 0;
@@ -56,17 +60,13 @@ header {
     position: fixed;
     /*display: flex;
     align-items: center;*/
+    display: inline-block;
 }
 
 
 header img {
     height: 70px; 
     margin-right: 70px;
-}
-
-header h1 {
-    margin: 0;
-    margin-top: 15px;
 }
 
 section .article1 {
@@ -77,6 +77,10 @@ section .article1 {
 .articles {
     margin: 10px 80px;
     margin-top: 30px;
+}
+
+.articles p.presentation {
+    text-align: center;
 }
 
 .articles .article2 {
